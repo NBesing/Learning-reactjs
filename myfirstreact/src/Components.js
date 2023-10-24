@@ -1,4 +1,5 @@
-import './App.css'
+import './App.css';
+
 function App() {
     return(<div classname="App">
        <Job company="Afrovision" position="UI/UX designer" salary={50000} /> 
@@ -8,9 +9,14 @@ function App() {
     </div>); 
 }
 const Job=(props) =>{
-    <><h1>{props.company}</h1>
+    return(
+    <div>
+        <h1>{props.company}</h1>
     <h1>{props.position}</h1>
-    <h1>{props.salary}</h1></>
+    <h1>{props.salary}</h1>
+    </div>
+    )
+    
 
 
 }
